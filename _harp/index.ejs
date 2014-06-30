@@ -22,7 +22,13 @@
           <% } %>
           <% if (tl[i].links) { %>
             <% for (var label in tl[i].links) { %>
-              <a href="<%= tl[i].links[label]%>"><%= label %></a>
+
+              <% if (label[0] == '>') { %>
+                <a href="<%= tl[i].links[label]%>"><%= label %></a>
+              <% } else { %>
+                  <%= label %><br>
+              <% } %>
+
             <% } %>
           <% } %>
         </li>
