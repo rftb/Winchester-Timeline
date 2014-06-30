@@ -36,7 +36,7 @@
     }
   , {
       "stamp": "Weeks 7-8 : Main Site | Sprint 4",
-      "content": "Build Responsive Front end",
+      "content": "Animation, Visua Enhancement, & Content Input",
       "links": {
         "JavaScript (Animation) : Marketing Site": "#"
       , "Input Forms : Marketing Site": "#"
@@ -51,19 +51,18 @@
     }
   , {
       "stamp": "Weeks 9-10 : Main Site | Sprint 5",
-      "content": "Build Responsive Front end",
+      "content": "Optimization, Analytics, & Testing",
       "links": {
         "Speed Optimization : General": "#"
       , "Internal Search : General": "#"
       , "SEO : Marketing Site": "#"
       , "Analytics : All": "#"
-      , "Training : Marketing Site": "#"
       , "Testing : Marketing Site": "#"
       }
     }
   , {
       "stamp": "Weeks 11-12 : Main Site, Vendor Hub, Vendor Instance | Sprint 6",
-      "content": "Build Responsive Front end",
+      "content": "Testing & Launch",
       "links": {
         "Front End Customization : Vendor Hub, Vendor Instance": "#"
       , "Training : All": "#"
