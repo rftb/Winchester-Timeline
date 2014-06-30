@@ -75,6 +75,11 @@ hr {
 /************End Global**************/
 /************Timeline**************/
 /* Timeline Container */
+
+.tl-content {
+  font-weight: bold;
+}
+
 .timeline {
   border-left: 5px solid #dddddd;
   padding-bottom: 3em;
