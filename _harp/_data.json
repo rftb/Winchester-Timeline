@@ -1,0 +1,75 @@
+{
+  "timeline": [
+    {
+      "stamp": "Weeks 1-2 (Concurrent with Design Phase) : General, Vendor Hub, Vendor Instance | Sprint 1",
+      "content": "Setup eCommerce",
+      "links": {
+        "Hosting & DNS : General": "#"
+      , "CMS : Vendor Hub, Vendor Instance" : "#"
+      , "SSL : General" : "#"
+      , "Responsive Template : Vendor Hub, Vendor Instance " : "#"
+      , "Cart System Setup / Installation : Vendor Instance" : "#"
+      , "Product Variations : Vendor Hub" : "#"
+      }
+    },
+    {
+      "stamp": "Weeks 3-4 (Concurrent with Design Phase) : Vendor Hub, Vendor Instance | Sprint 2",
+      "content": "Setup Vendor Instance framework",
+      "links": {
+        "User Permissions : Vendor Hub " : "#"
+      , "Product Sync : Vendor Hub, Vendor Instance " : "#"
+      , "Payment Gateway : Vendor Instance " : "#"
+      , "Email Notifications : Vendor Instance " : "#"
+      , "Reporting : Vendor Instance " : "#"
+      , "Testing : Vendor Hub, Vendor Instance " : "#"
+      }
+    },
+    {
+      "stamp": "Weeks 5-6 (Post Design Phase) : Main Site | Sprint 3",
+      "content": "Build Responsive Front end",
+      "links": {
+        "CMS : Marketing Site": "#"
+      , "Responsive Framework : Marketing Site": "#"
+      , "Image Gallery : Marketing Site": "#"
+      , "Testing : Marketing Site": "#"
+      }
+    }
+  , {
+      "stamp": "Weeks 7-8 : Main Site | Sprint 4",
+      "content": "Build Responsive Front end",
+      "links": {
+        "JavaScript (Animation) : Marketing Site": "#"
+      , "Input Forms : Marketing Site": "#"
+      , "Content Extraction : Marketing Site": "#"
+      , "Content Input : Marketing Site": "#"
+      , "Misc. Admin Customization : Marketing Site": "#"
+      , "Customer Support Admin : Marketing Site": "#"
+      , "Outgoing Emails / Notifications : Marketing Site": "#"
+      , "Social Media Integration : Marketing Site": "#"
+      , "Testing : Marketing Site": "#"
+      }
+    }
+  , {
+      "stamp": "Weeks 9-10 : Main Site | Sprint 5",
+      "content": "Build Responsive Front end",
+      "links": {
+        "Speed Optimization : General": "#"
+      , "Internal Search : General": "#"
+      , "SEO : Marketing Site": "#"
+      , "Analytics : All": "#"
+      , "Training : Marketing Site": "#"
+      , "Testing : Marketing Site": "#"
+      }
+    }
+  , {
+      "stamp": "Weeks 11-12 : Main Site, Vendor Hub, Vendor Instance | Sprint 6",
+      "content": "Build Responsive Front end",
+      "links": {
+        "Front End Customization : Vendor Hub, Vendor Instance": "#"
+      , "Training : All": "#"
+      , "Testing : All": "#"
+      , "Launch : All": "#"
+      }
+    }
+  ]
+}
