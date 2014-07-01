@@ -17,8 +17,8 @@
       "content": "Setup Vendor Instance framework",
       "links": {
         "User Permissions : Vendor Hub " : "#"
-      , "Product Sync : Vendor Hub, Vendor Instance " : "#"
-      , "Vendor Wholesale Order Form : Vendor Hub, Vendor Instance " : "#"
+      , "> Product Sync : Vendor Hub, Vendor Instance " : "product-sync.html"
+      , "> Vendor Wholesale Order Form : Vendor Hub, Vendor Instance " : "vendor-wholesale.html"
       , "Payment Gateway : Vendor Instance " : "#"
       , "Email Notifications : Vendor Instance " : "#"
       , "Reporting : Vendor Instance " : "#"
