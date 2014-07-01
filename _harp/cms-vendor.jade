@@ -2,6 +2,8 @@
   :markdown
     # CMS : Vendor Hub & Instance Pages
 
+    The eCommerce system will consist of two parts refered to here as the "Vendor Hub", which with Winchester Safe employee actions, and the "Vendor Instance", which is where the actual vendor will use. The vendors will not have access to the administration section of the Vendor Hub.
+
     ## Vendor Hub
     RFTB will create a "Vendor Hub" ontop of the framework WooCommerce that will be the front facing part of the store. Customers will configure their order here, but payment functioanlity is delegated to the Vendor Instance. Specific Winchester Safes employees will be able to edit/add/delete products at a centralized location. The product changes made here will update the vendor instances automatically.
 
@@ -34,23 +36,19 @@
     ---
 
     ## Vendor Instance
-    The Vendor Instance is what will be cloned and used for each vendor. It is where the vendor will go to place Purchase Orders from the Winchester Safes factory. And where the actual customers will finalize and pay for orders.
+    The "Vendor Instance" is what will be cloned and used for each vendor. It is where the vendor will go to place Purchase Orders from the Winchester Safes factory. And where the actual customers will finalize and pay for orders.
 
     ### Features of the Vendor Instance : Customer
-
-    - Accepts payment information and send it to Authorize.net
-    - Notifies the customer when the order is successful
-    - Collects visitor contact information and attaches to order
-    - ? Lets the user choose delivery fee and enter address ?
-    - ? Has a place for user to log-in ?
-    - ? Has a place to check order status ?
+    - Customers will be able to submit payment information securely to Authorize.net.
+    - The customer will be notified when the order is processed.
+    - Customer contact information will be attached to the order in order for the vendpr tpo contact the customer.
 
     ###  Features of the Vendor Instance : Vendor
-      - ? Ability to change Delevery fee & radius ?
-      - Ability to place wholesale orders with the vendor order form
+      - Optional: The vendor will be able to set a price for a Deilvery fee line item that can be added to the order.
+      - The vendor can place wholesale orders, which will be emailed to the Winchester Safe factory using a Purchase Order Form.
 
     ###  Functionality of the Vendor Instance : Back End
-      - Autofills order information posted from the Vendor Hub
+      -
       - Keeps Product list and data in sync with the Hub
       - Processes order and generates reports
       - Sends vendor orders to Wincester email
