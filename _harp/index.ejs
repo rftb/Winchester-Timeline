@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
+
+  <div class="col-md-5 sidebar">
+
   <% if (public._data && public._data.timeline && public._data.timeline.length > 0) { %>
     <!-- Make sure we have timeline data -->
     <% var tl = public._data.timeline %>
@@ -46,5 +49,16 @@
       </ol>
     </div>
   <% } %>
+  </div>
+
+
+  <div class="col-md-7" id='details'>
+
+  </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
 </body>
 </html>

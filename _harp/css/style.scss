@@ -4,10 +4,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body, div, object, iframe, fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0; }
+html, body, object, iframe, fieldset {
+  margin: 0  !important;
+  padding: 0  !important;
+  border: 0 !important; }
 
 ol.timeline , .timeline ul {
   list-style: none;
@@ -24,7 +24,6 @@ body {
   color: #222222;
   font: 120%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   padding: 1em;
-  max-width: 800px;
   -webkit-text-size-adjust: 100%; }
   @media all and (min-width: 40em) {
     body {
@@ -90,6 +89,7 @@ hr {
 ol.timeline {
   border-left: 2px solid #dddddd;
   padding-bottom: 3em;
+  padding-right: .5em;
   margin: 1.5em;
 
   position: relative; }
@@ -172,4 +172,15 @@ h1 {
     color: #666;
   }
   margin-bottom: 2em;
+}
+
+
+.sidebar {
+  margin: 0;
+  background-color: #efefef;
+  color: #333;
+}
+
+#details {
+  padding: 2em;
 }
