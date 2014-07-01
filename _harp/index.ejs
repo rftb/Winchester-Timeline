@@ -5,12 +5,13 @@
   <title><%= project_name %> Project Timeline</title>
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
   <% if (public._data && public._data.timeline && public._data.timeline.length > 0) { %>
     <!-- Make sure we have timeline data -->
     <% var tl = public._data.timeline %>
-    <h1><%= project_name %> Project Timeline</h1>
+    <h1><%= project_name %><sub>Project Timeline</sub></h1>
     <ol class="timeline">
       <% for (var i in tl) { %>
         <li class="tl-node">
@@ -24,7 +25,7 @@
             <% for (var label in tl[i].links) { %>
 
               <% if (label[0] == '>') { %>
-                <a href="<%= tl[i].links[label]%>"><%= label %></a>
+                <a href="<%= tl[i].links[label]%>"><%= label.substr(2) %></a>
               <% } else { %>
                   <%= label %><br>
               <% } %>

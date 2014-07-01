@@ -9,7 +9,7 @@ html, body, div, object, iframe, fieldset {
   padding: 0;
   border: 0; }
 
-ol, ul {
+ol.timeline , .timeline ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -24,6 +24,7 @@ body {
   color: #222222;
   font: 120%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   padding: 1em;
+  max-width: 800px;
   -webkit-text-size-adjust: 100%; }
   @media all and (min-width: 40em) {
     body {
@@ -48,20 +49,26 @@ a img {
   border: 0;
   outline: 0; }
 
-h1 {
+h1, h2, h3 {
+  text-transform: capitalize;
+}
+
+
+.timeline h1 {
   font-size: 2em;
   line-height: 1;
   letter-spacing: -0.02em;
   margin-bottom: 0.8em; }
 
-h2 {
+
+.timeline h2 {
   text-transform: lowercase;
-  font-size: 3em;
+  font-size: 1.6em;
   line-height: 1.1;
   margin: 0 0 0.4em; }
 
-h3 {
-  font-size: 1.8em;
+.timeline h3 {
+  font-size: 1.4em;
   line-height: 1.1;
   margin: 0 0 0.2em;
   text-transform: lowercase; }
@@ -80,9 +87,11 @@ hr {
   font-weight: bold;
 }
 
-.timeline {
-  border-left: 5px solid #dddddd;
+ol.timeline {
+  border-left: 2px solid #dddddd;
   padding-bottom: 3em;
+  margin: 1.5em;
+
   position: relative; }
   .timeline:before {
     content: "";
@@ -93,12 +102,13 @@ hr {
     height: 40px;
     border-radius: 40px;
     background: #dddddd;
-    border: 5px solid #dddddd; }
+    border: 2px solid #dddddd; }
 
 /* Individual Timeline Item */
 .tl-node {
-  padding-left: 1em;
+  padding-left: 2em;
   margin-bottom: 3em;
+  padding-top: .3em;
   position: relative; }
   .tl-node a {
     display: block; }
@@ -106,16 +116,17 @@ hr {
     content: "";
     position: absolute;
     top: 0;
-    left: -0.95em;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    left: -16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     background: #fff;
-    border: 5px solid #dddddd; }
+    border: 2px solid #dddddd; }
 
 /* Timestamp */
 .tl-stamp {
-  font-size: 0.7em;
+  font-size: 1.1em;
+  margin-bottom: .25em;
   color: gray; }
 
 /************End Timeline**************/
@@ -139,3 +150,26 @@ hr {
   overflow: auto;
 }
 /************End Instructions**************/
+
+
+h3 {
+  .label {
+    font-size: .5em;
+    position: relative;
+    bottom: .25em;
+    left: .5em;
+
+  }
+}
+
+h1 {
+  sub {
+    padding: .75em 0;
+    display: block;
+    bottom: 0;
+    left: 0;
+    font-size: .5em;
+    color: #666;
+  }
+  margin-bottom: 2em;
+}

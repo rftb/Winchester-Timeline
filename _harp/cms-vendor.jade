@@ -1,0 +1,38 @@
+!= partial("_common")
+  :markdown
+    # CMS : Vendor Hub & Instance Pages
+
+    ## Vendor Hub
+    RFTB will create a "Vendor Hub" that will be the front facing part of the store. It will also be the place where Winchester can go to update product details.
+
+    ###  Features of the Vendor Hub (User POV)
+      - Matches the design of teh Marketing Site
+      - Allows a visitor to customize a safe order
+      - Contains all pricing, and other safe details
+      - Has a list of vendors that it can locate by zip
+      - Can redirect a user's to the selected vendor with order data for autofill
+
+    ---
+
+    ## Vendor Instance
+    The Vendor Instance is what will be cloned and used for each vendor. It's prmary function is the payment gateway.
+
+    ### Features of the Vendor Instance : Customer
+
+  :markdown
+    - Accepts payment information and send it to Authorize.net
+    - Notifies the customer when the order is successful
+    - Collects visitor contact information and attaches to order
+    - ? Lets the user choose delivery fee and enter address ?
+    - ? Has a place for user to log-in ?
+    - ? Has a place to check order status ?
+
+    ###  Features of the Vendor Instance : Vendor
+      - ? Ability to change Delevery fee & radius ?
+      - Ability to place wholesale orders with the vendor order form
+
+    ###  Functionality of the Vendor Instance : Back End
+      - Autofills order information posted from the Vendor Hub
+      - Keeps Product list and data in sync with the Hub
+      - Processes order and generates reports
+      - Sends vendor orders to Wincester email
