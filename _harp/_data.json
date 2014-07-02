@@ -13,6 +13,12 @@
       }
     },
     {
+      "stamp": "Sprint 1 Deliverables",
+      "links": {
+        "eCommerce Worflow": "#"
+      }
+    },
+    {
       "stamp": "Weeks 3-4 (Concurrent with Design Phase) : Vendor Hub, Vendor Instance | Sprint 2",
       "content": "Setup Vendor Instance framework",
       "links": {
@@ -23,6 +29,12 @@
       , "Email Notifications : Vendor Instance " : "#"
       , "Reporting : Vendor Instance " : "#"
       , "Testing : Vendor Hub, Vendor Instance " : "#"
+      }
+    },
+    {
+      "stamp": "Sprint 2 Deliverables",
+      "links": {
+        "Vendor Dev Link": "#"
       }
     },
     {
@@ -44,7 +56,7 @@
       , "Content Extraction : Marketing Site": "#"
       , "Content Input : Marketing Site": "#"
       , "Misc. Admin Customization : Marketing Site": "#"
-      , "Customer Support Admin : Marketing Site": "#"
+      , "> Customer Support Admin : Marketing Site": "customer-support.html"
       , "Outgoing Emails / Notifications : Marketing Site": "#"
       , "Social Media Integration : Marketing Site": "#"
       , "Testing : Marketing Site": "#"

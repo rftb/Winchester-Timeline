@@ -149,12 +149,12 @@ h1 {
   margin: 0;
   background-color: #efefef;
   color: #333;
+  height: 100%;
 
   .scroll {
-    height: 1000px;
+    height: 900px;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-bottom: 200px;
     margin-right: -1.1em;
   }
 
@@ -168,6 +168,7 @@ h1 {
     &.active {
       background-color: #FFF;
       margin-right: -4em;
+      margin-left: -1em;
       padding-left: 1em;
       padding: 1em;
     }
