@@ -10,49 +10,49 @@
 <body>
 
   <div class="col-md-5 sidebar">
-
-  <% if (public._data && public._data.timeline && public._data.timeline.length > 0) { %>
-    <!-- Make sure we have timeline data -->
-    <% var tl = public._data.timeline %>
-    <h1><%= project_name %><sub>Project Timeline</sub></h1>
-    <ol class="timeline">
-      <% for (var i in tl) { %>
-        <li class="tl-node">
-          <% if (tl[i].stamp) { %>
-            <div class="tl-stamp"><%= tl[i].stamp %></div>
-          <% } %>
-          <% if (tl[i].content) { %>
-            <div class="tl-content"><%= tl[i].content %></div>
-          <% } %>
-          <% if (tl[i].links) { %>
-            <% for (var label in tl[i].links) { %>
-
-              <% if (label[0] == '>') { %>
-                <a href="<%= tl[i].links[label]%>"><%= label.substr(2) %></a>
-              <% } else { %>
-                  <%= label %><br>
+    <div class="scroll">
+      <% if (public._data && public._data.timeline && public._data.timeline.length > 0) { %>
+        <!-- Make sure we have timeline data -->
+        <% var tl = public._data.timeline %>
+        <h1><%= project_name %><sub>Project Timeline</sub></h1>
+        <ol class="timeline">
+          <% for (var i in tl) { %>
+            <li class="tl-node">
+              <% if (tl[i].stamp) { %>
+                <div class="tl-stamp"><%= tl[i].stamp %></div>
               <% } %>
+              <% if (tl[i].content) { %>
+                <div class="tl-content"><%= tl[i].content %></div>
+              <% } %>
+              <% if (tl[i].links) { %>
+                <% for (var label in tl[i].links) { %>
+                  <% if (label[0] == '>') { %>
+                    <a href="<%= tl[i].links[label]%>"><%= label.substr(2) %></a>
+                  <% } else { %>
+                      <%= label %><br>
+                  <% } %>
 
-            <% } %>
+                <% } %>
+              <% } %>
+            </li>
           <% } %>
-        </li>
+        </ol>
+      <% } else { %>
+        <!-- Show instructions if there are no timeline items -->
+        <div class="instructions">
+          <h1>Instructions!</h1>
+          <ol>
+            <li>Rename <strong>_data-sample.json</strong> to <strong>_data.json</strong></li>
+            <li>Update timeline events in the <strong>_data.json</strong> file</li>
+            <li>Refresh the browser to make sure it’s working properly</li>
+          </ol>
+        </div>
       <% } %>
-    </ol>
-  <% } else { %>
-    <!-- Show instructions if there are no timeline items -->
-    <div class="instructions">
-      <h1>Instructions!</h1>
-      <ol>
-        <li>Rename <strong>_data-sample.json</strong> to <strong>_data.json</strong></li>
-        <li>Update timeline events in the <strong>_data.json</strong> file</li>
-        <li>Refresh the browser to make sure it’s working properly</li>
-      </ol>
     </div>
-  <% } %>
   </div>
 
 
-  <div class="col-md-7" id='details'>
+  <div class="col-md-7 col-md-offset-5" id='details'>
 
   </div>
 

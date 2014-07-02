@@ -143,9 +143,36 @@ h1 {
 
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   margin: 0;
   background-color: #efefef;
   color: #333;
+
+  .scroll {
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 200px;
+    margin-right: -1.1em;
+  }
+
+
+  a {
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+    &.active {
+      background-color: #FFF;
+      margin-right: -4em;
+      padding-left: 1em;
+      padding: 1em;
+    }
+  }
+
 }
 
 #details {
